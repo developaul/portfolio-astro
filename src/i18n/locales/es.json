@@ -1,0 +1,41 @@
+{
+  "basics": {
+    "name": "Paul Chavez",
+    "label": "Software Engineer con más de 3 años de experiencia",
+    "image": "/me.gif",
+    "email": "paulchavezromero20@gmail.com",
+    "phone": "+51 957383385",
+    "whatsApp": "51957383385",
+    "url": "https://developaul.com",
+    "summary": "+3 años como Software Engineer, me he destacado por valores como la integridad, la colaboración y la innovación. He liderado proyectos exitosos que mejoran la eficiencia y la experiencia del usuario. Mi motivación es continuar aprendiendo y creciendo en un entorno dinámico aportando mi experiencia y pasión por la tecnología.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "lima",
+      "countryCode": "PE",
+      "region": "Peru"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "developaul",
+        "url": "https://linkedin.com/in/developaul"
+      },
+      {
+        "network": "X",
+        "username": "developaul",
+        "url": "https://x.com/developaul"
+      },
+      {
+        "network": "GitHub",
+        "username": "developaul",
+        "url": "https://github.com/developaul"
+      },
+      {
+        "network": "Youtube",
+        "username": "developaul",
+        "url": "https://www.youtube.com/@developaul"
+      }
+    ]
+  }
+}

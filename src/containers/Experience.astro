@@ -1,0 +1,71 @@
+---
+import Section from "./Section.astro";
+import { getLangFromUrl, useGetInfo } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const info = useGetInfo(lang);
+
+const { work, workTitle, defaultEndDate } = info;
+---
+
+<Section title={workTitle}>
+  <ul class="flex flex-col gap-8">
+    {
+      work.map(({ name, startDate, endDate, position, summary, url }) => {
+        const startYear = new Date(startDate).getFullYear();
+        const endYear =
+          endDate != null ? new Date(endDate).getFullYear() : defaultEndDate;
+
+        return (
+          <li>
+            <article>
+              <header class="flex justify-between items-start mb-1">
+                <div>
+                  <h3 class="font-medium text-gray-900">
+                    <a
+                      class="text-gray-900 hover:underline"
+                      href={url}
+                      title={`Ver ${name}`}
+                      target="_blank"
+                    >
+                      {name}
+                    </a>
+                  </h3>
+                  <h4 class="text-gray-950 font-normal">{position}</h4>
+                </div>
+
+                <div>
+                  <time
+                    class="text-sm min-w-28 cursor-default text-gray-500"
+                    datetime={startDate}
+                    data-title={startDate}
+                  >
+                    {startYear}
+                  </time>
+                  {" - "}
+                  <time
+                    class="text-sm min-w-28 cursor-default text-gray-500"
+                    datetime={endDate}
+                    data-title={endDate}
+                  >
+                    {endYear}
+                  </time>
+                </div>
+              </header>
+
+              <footer>
+                <ul class="list-inside list-disc gap-2">
+                  {summary.map((item) => (
+                    <li class="text-sm m-0 text-pretty text-gray-700">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </footer>
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
+</Section>

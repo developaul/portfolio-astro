@@ -5,21 +5,19 @@ import { getLangFromUrl } from "@i18n/utils";
 const currentLang = getLangFromUrl(Astro.url);
 ---
 
-<form class="max-w-sm mx-auto">
-  <div class="flex">
-    <select
-      id="languagePicker"
-      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-e-lg border-s-gray-100 border-s-2 block p-2.5 outline-none"
-    >
-      {
-        Object.entries(languages).map(([lang, label]) => (
-          <option selected={lang === currentLang} value={lang}>
-            {label}
-          </option>
-        ))
-      }
-    </select>
-  </div>
+<form>
+  <select
+    id="languagePicker"
+    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-e-lg border-s-gray-100 border-s-2 block p-2.5 outline-none"
+  >
+    {
+      Object.entries(languages).map(([lang, label]) => (
+        <option selected={lang === currentLang} value={lang}>
+          {label}
+        </option>
+      ))
+    }
+  </select>
 </form>
 <script>
   const languagePicker = document.querySelector("#languagePicker");

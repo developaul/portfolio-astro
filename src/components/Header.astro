@@ -1,14 +1,16 @@
 ---
-import Navbar from "@components/Navbar.astro";
-import SocialNetworks from "@components/SocialNetworks.astro";
 import Container from "@containers/Container.astro";
 import LanguagePicker from "./LanguagePicker.astro";
 ---
 
-<header>
-	<Container>
-		<LanguagePicker />
-		<!-- <Navbar /> -->
-		<!-- <SocialNetworks /> -->
+<header class="sticky top-0">
+	<Container classes="flex justify-end">
+		<div>
+			<!-- TODO: ADD LOGO -->
+		</div>
+		<div>
+			<!-- TODO: ADD THEME PICKER -->
+			<LanguagePicker />
+		</div>
 	</Container>
 </header>

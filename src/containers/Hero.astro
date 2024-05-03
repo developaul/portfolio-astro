@@ -1,10 +1,103 @@
 ---
-import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import WorldMap from "@icons/WorldMap.astro";
+import LinkedIn from "@icons/LinkedIn.astro";
+import WhatsApp from "@icons/WhatsApp.astro";
+import Youtube from "@icons/Youtube.astro";
+import GitHub from "@icons/GitHub.astro";
+import Phone from "@icons/Phone.astro";
+import Mail from "@icons/Mail.astro";
+import X from "@icons/X.astro";
+
+import { getLangFromUrl, useGetInfo } from "@i18n/utils";
+
+const SOCIAL_ICONS: Record<string, any> = {
+  GitHub,
+  LinkedIn,
+  X,
+  Youtube,
+};
 
 const lang = getLangFromUrl(Astro.url);
-const translation = useTranslations(lang);
+const info = useGetInfo(lang);
+
+const { image, name, label, location, email, phone, whatsApp, profiles } =
+  info.basics;
+
+const { city, region } = location;
 ---
 
-<section>
-  {translation.basics.label}
+<section class="flex flex-col items-center">
+  <div class="flex flex-col md:flex-row gap-5 pr-8 items-center">
+    <figure class="flex justify-center items-center w-60">
+      <img src={image} alt={name} />
+    </figure>
+    <div class="text-center md:text-left">
+      <h1 class="text-4xl mb-2">{name}</h1>
+      <h2 class="text-lg text-balance font-medium">{label}</h2>
+      <span class="flex gap-2 justify-center items-center md:justify-start">
+        <WorldMap />
+        {city}, {region}
+      </span>
+      <footer
+        class="flex justify-center items-center md:justify-start gap-2 mt-2"
+      >
+        {
+          email && (
+            <a
+              class="text-gray-500 inline-flex items-center justify-center border border-gray-200 p-1 w-8 h-8 rounded-md transition-all duration-300 ease-linear hover:bg-gray-100 hover:border-gray-300"
+              href={`mailto:${email}`}
+              title={`Enviar un correo electrónico a ${name} al correo ${email}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Mail />
+            </a>
+          )
+        }
+        {
+          phone && (
+            <a
+              class="text-gray-500 inline-flex items-center justify-center border border-gray-200 p-1 w-8 h-8 rounded-md transition-all duration-300 ease-linear hover:bg-gray-100 hover:border-gray-300"
+              href={`tel:${phone}`}
+              title={`Llamar por teléfono a ${name} al número ${phone}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Phone />
+            </a>
+          )
+        }
+        {
+          whatsApp && (
+            <a
+              class="text-gray-500 inline-flex items-center justify-center border border-gray-200 p-1 w-8 h-8 rounded-md transition-all duration-300 ease-linear hover:bg-gray-100 hover:border-gray-300"
+              href={`https://wa.me/${whatsApp}?text=Hola, me interesa tu perfil`}
+              title={`Enviar mensaje a ${name} al número ${phone}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <WhatsApp />
+            </a>
+          )
+        }
+        {
+          profiles.map(({ network, url, username }) => {
+            const Icon = SOCIAL_ICONS[network];
+
+            return (
+              <a
+                class="text-gray-500 inline-flex items-center justify-center border border-gray-200 p-1 w-8 h-8 rounded-md transition-all duration-300 ease-linear hover:bg-gray-100 hover:border-gray-300"
+                href={url}
+                title={`Visitar el perfil de ${username} en ${network}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon />
+              </a>
+            );
+          })
+        }
+      </footer>
+    </div>
+  </div>
 </section>

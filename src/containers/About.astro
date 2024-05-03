@@ -1,0 +1,15 @@
+---
+import Section from "@containers/Section.astro";
+import { getLangFromUrl, useGetInfo } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const info = useGetInfo(lang);
+
+const { summary, summaryTitle } = info.basics;
+---
+
+<Section title={summaryTitle}>
+  <p>
+    {summary}
+  </p>
+</Section>

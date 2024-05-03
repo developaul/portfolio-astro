@@ -1,13 +1,14 @@
 {
   "basics": {
     "name": "Paul Chavez",
-    "label": "Software Engineer con más de 3 años de experiencia",
+    "label": "Ingeniero de Software con más de 3 años de experiencia",
     "image": "/me.gif",
     "email": "paulchavezromero20@gmail.com",
     "phone": "+51 957383385",
     "whatsApp": "51957383385",
     "url": "https://developaul.com",
-    "summary": "+3 años como Software Engineer, He liderado proyectos que han marcado un impacto significativo en la eficiencia y la experiencia del usuario. Mi pasión por la innovación me impulsa a seguir contribuyendo con mi experiencia en entornos dinámicos, mientras continúo mi crecimiento profesional.",
+    "summary": "+3 años como Ingeniero de Software, He liderado proyectos que han marcado un impacto significativo en la eficiencia y la experiencia del usuario. Mi pasión por la innovación me impulsa a seguir contribuyendo con mi experiencia en entornos dinámicos, mientras continúo mi crecimiento profesional.",
+    "summaryTitle": "Sobre mí",
     "location": {
       "address": "",
       "postalCode": "",

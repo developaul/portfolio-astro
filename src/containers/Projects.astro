@@ -1,0 +1,87 @@
+---
+import Section from "./Section.astro";
+
+import { getLangFromUrl, useGetInfo } from "@i18n/utils";
+import GitHub from "@icons/GitHub.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const info = useGetInfo(lang);
+
+const { projects } = info;
+---
+
+<Section title="Proyectos">
+  <ul class="grid gap-4">
+    {
+      projects.map(
+        ({ url, description, highlights, name, isActive, github }) => {
+          return (
+            <li>
+              <article class="flex flex-col p-4 h-full rounded-lg border border-gray-200">
+                <header class="flex-1">
+                  <h3 class="flex items-center gap-2 mb-1 ">
+                    <a
+                      class="text-black hover:underline"
+                      href={url}
+                      target="_blank"
+                      title={`Ver el proyecto ${name}`}
+                    >
+                      {name}
+                    </a>
+                    {isActive && <span>•</span>}
+                    {github && (
+                      <a
+                        class="text-black hover:underline"
+                        href={github}
+                        target="_blank"
+                        title={`Ver código fuente del proyecto ${name}`}
+                      >
+                        <GitHub />
+                      </a>
+                    )}
+                  </h3>
+                  <p class="text-sm mb-1 leading-5">{description}</p>
+                </header>
+                <footer class="flex flex-wrap gap-1 text-xs">
+                  {highlights.map((highlight) => {
+                    return (
+                      <span class="inline-block rounded-md bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1">
+                        {highlight}
+                      </span>
+                    );
+                  })}
+                </footer>
+              </article>
+            </li>
+          );
+        },
+      )
+    }
+  </ul>
+</Section>
+
+<style>
+  ul {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  article h3 span {
+    color: rgb(0, 188, 47);
+    animation-name: flicker;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes flicker {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.25;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+</style>

@@ -107,5 +107,40 @@
         ""
       ]
     }
+  ],
+  "projects": [
+    {
+      "name": "Stylus Shop",
+      "isActive": true,
+      "description": "La tienda en línea de ropa ofrece autenticación y pagos a través de PayPal, además de características como guardar favoritos, una sección para añadir nuevo stock y otra para rastrear las ventas realizadas y en proceso..",
+      "highlights": [
+        "Vende tu propia ropa",
+        "Pagos online"
+      ],
+      "url": "https://stylus-shop.vercel.app/",
+      "github": "https://github.com/developaul/stylus-shop"
+    },
+    {
+      "name": "Task Manager",
+      "isActive": true,
+      "description": "Task Manager es una aplicación para organizar tareas en las siguientes categorias To do, In Progress, Done para mantener cierta organización a la hora de realizar tareas.",
+      "highlights": [
+        "Clon de trello",
+        "Optimiza tu gestión de tareas"
+      ],
+      "url": "https://task-manager-cd8af.web.app/",
+      "github": "https://github.com/developaul/task-manager-react"
+    },
+    {
+      "name": "Movie App",
+      "isActive": true,
+      "description": "Aplicación Web de películas, donde podras visualizar trailers desde las últimas peliculas hasta las clasicas.",
+      "highlights": [
+        "Mirar últimos tráilers",
+        "Películas"
+      ],
+      "url": "https://keen-wilson-cf2ebe.netlify.app/",
+      "github": "https://github.com/developaul/movie-react"
+    }
   ]
 }

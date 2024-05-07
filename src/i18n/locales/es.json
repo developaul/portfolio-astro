@@ -81,5 +81,31 @@
     }
   ],
   "workTitle": "Experiencia laboral más reciente",
-  "defaultEndDate": "Actualmente"
+  "defaultEndDate": "Actual",
+  "education": [
+    {
+      "institution": "ICPNA",
+      "url": "https://www.icpna.edu.pe/",
+      "area": "Inglés",
+      "studyType": "Idioma",
+      "startDate": "2022-02-01",
+      "endDate": null,
+      "score": "",
+      "courses": [
+        ""
+      ]
+    },
+    {
+      "institution": "SENATI",
+      "url": "https://www.senati.edu.pe/",
+      "area": "Tecnologías de la Información y Comunicación",
+      "studyType": "Técnico",
+      "startDate": "2019-02-01",
+      "endDate": "2020-02-01",
+      "score": "",
+      "courses": [
+        ""
+      ]
+    }
+  ]
 }

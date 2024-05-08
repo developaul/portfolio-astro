@@ -112,7 +112,7 @@
     {
       "name": "Stylus Shop",
       "isActive": true,
-      "description": "La tienda en línea de ropa ofrece autenticación y pagos a través de PayPal, además de características como guardar favoritos, una sección para añadir nuevo stock y otra para rastrear las ventas realizadas y en proceso..",
+      "description": "La tienda en línea de ropa ofrece autenticación y pagos a través de PayPal, además de características como guardar favoritos, una sección para añadir nuevo stock y otra para rastrear las ventas realizadas y en proceso.",
       "highlights": [
         "Vende tu propia ropa",
         "Pagos online"
@@ -141,6 +141,63 @@
       ],
       "url": "https://keen-wilson-cf2ebe.netlify.app/",
       "github": "https://github.com/developaul/movie-react"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": []
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": []
+    },
+    {
+      "name": "Tailwind",
+      "level": "Avanzado",
+      "keywords": []
+    },
+    {
+      "name": "TypeScript",
+      "level": "Avanzado",
+      "keywords": []
+    },
+    {
+      "name": "Node",
+      "level": "Avanzado",
+      "keywords": []
+    },
+    {
+      "name": "MySQL",
+      "level": "Avanzado",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "Avanzado",
+      "keywords": []
+    },
+    {
+      "name": "GitHub",
+      "level": "Avanzado",
+      "keywords": []
+    },
+    {
+      "name": "Next",
+      "level": "Avanzado",
+      "keywords": []
+    },
+    {
+      "name": "React",
+      "level": "Avanzado",
+      "keywords": []
     }
   ]
 }

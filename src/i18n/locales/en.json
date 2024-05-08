@@ -142,61 +142,46 @@
     }
   ],
   "skills": [
-    {
-      "name": "HTML",
-      "level": "Master",
-      "keywords": []
-    },
-    {
-      "name": "CSS",
-      "level": "Master",
-      "keywords": []
-    },
-    {
-      "name": "JavaScript",
-      "level": "Master",
-      "keywords": []
-    },
-    {
-      "name": "Tailwind",
-      "level": "Avanzado",
-      "keywords": []
-    },
-    {
-      "name": "TypeScript",
-      "level": "Avanzado",
-      "keywords": []
-    },
-    {
-      "name": "Node",
-      "level": "Avanzado",
-      "keywords": []
-    },
-    {
-      "name": "MySQL",
-      "level": "Avanzado",
-      "keywords": []
-    },
-    {
-      "name": "Git",
-      "level": "Avanzado",
-      "keywords": []
-    },
-    {
-      "name": "GitHub",
-      "level": "Avanzado",
-      "keywords": []
-    },
-    {
-      "name": "Next",
-      "level": "Avanzado",
-      "keywords": []
-    },
-    {
-      "name": "React",
-      "level": "Avanzado",
-      "keywords": []
-    }
+    "HTML",
+    "CSS",
+    "SASS",
+    "Tailwind",
+    "Boostrap",
+    "JavaScript",
+    "TypeScript",
+    "Node",
+    "React",
+    "Redux",
+    "Next",
+    "Restify",
+    "Express",
+    "Graphql",
+    "Puppeteer",
+    "Cheerio",
+    "Socket",
+    "Docker",
+    "Jest",
+    "Mocha",
+    "Ffmpeg",
+    "AWS",
+    "Cloudinary",
+    "Git",
+    "GitHub",
+    "GitLab",
+    "StoryBook",
+    "Bash",
+    "MongoDB",
+    "PostgreSQL",
+    "MySQL",
+    "Redis",
+    "Elasticsearch",
+    "Firebase",
+    "Mixpanel",
+    "Electron",
+    "Astro",
+    "Metabase",
+    "Hubspot Developer",
+    "Linux"
   ],
   "alts": {
     "workTitle": "Most recent work experience",

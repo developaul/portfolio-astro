@@ -16,7 +16,7 @@ const lang = getLangFromUrl(Astro.url);
 <html lang={lang}>
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content="Portfolio" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
@@ -24,9 +24,7 @@ const lang = getLangFromUrl(Astro.url);
 	</head>
 	<body>
 		<Header />
-		<main>
-			<slot />
-		</main>
+		<slot />
 		<!-- <Footer /> -->
 	</body>
 </html>
@@ -42,11 +40,6 @@ const lang = getLangFromUrl(Astro.url);
 			white 60%
 		);
 	}
-	/* html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	} */
 
 	html {
 		font-family:

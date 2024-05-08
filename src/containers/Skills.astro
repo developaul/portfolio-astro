@@ -2,21 +2,35 @@
 import Section from "./Section.astro";
 import HTML from "@icons/html.astro";
 import CSS from "@icons/css.astro";
+import SASS from "@icons/sass.astro";
+import Tailwind from "@icons/tailwind.astro";
+import Boostrap from "@icons/bootstrap.astro";
 import JavaScript from "@icons/javascript.astro";
 import TypeScript from "@icons/type.astro";
-import React from "@icons/react.astro";
 import Node from "@icons/node.astro";
-import MySQL from "@icons/sql.astro";
+import React from "@icons/react.astro";
+import Redux from "@icons/redux.astro";
+import Next from "@icons/next.astro";
+import Graphql from "@icons/graphql.astro";
+import Socket from "@icons/socket.astro";
+import MySQL from "@icons/mySql.astro";
 import Git from "@icons/git.astro";
 import GitHub from "@icons/GitHub.astro";
-import Tailwind from "@icons/tailwind.astro";
-import Next from "@icons/next.astro";
+import AWS from "@icons/aws.astro";
+import Docker from "@icons/docker.astro";
+import GitLab from "@icons/GitLab.astro";
+import StoryBook from "@icons/storyBook.astro";
+import MongoDB from "@icons/mongoDB.astro";
+import Firebase from "@icons/firebase.astro";
+import Mixpanel from "@icons/mixpanel.astro";
+import Linux from "@icons/linux.astro";
 
 import { getLangFromUrl, useGetInfo } from "@i18n/utils";
 
 const SKILLS_ICONS: Record<string, any> = {
   HTML,
   CSS,
+  SASS,
   JavaScript,
   TypeScript,
   React,
@@ -26,6 +40,18 @@ const SKILLS_ICONS: Record<string, any> = {
   GitHub,
   Next,
   Tailwind,
+  Boostrap,
+  Redux,
+  Graphql,
+  Socket,
+  AWS,
+  Docker,
+  GitLab,
+  StoryBook,
+  MongoDB,
+  Firebase,
+  Mixpanel,
+  Linux,
 };
 
 const lang = getLangFromUrl(Astro.url);
@@ -37,12 +63,12 @@ const { skills, alts } = info;
 <Section title={alts.SkillTitle}>
   <ul class="inline-flex gap-2 flex-wrap">
     {
-      skills.map(({ name }) => {
-        const Icon = SKILLS_ICONS[name];
+      skills.map((skill) => {
+        const Icon = SKILLS_ICONS[skill];
 
         return (
-          <li class="flex items-center bg-gray-200 rounded-lg text-black text-sm font-medium gap-1 px-2 py-1">
-            {Icon && <Icon />} <span>{name}</span>
+          <li class="flex items-center bg-gray-100 rounded-lg text-black text-sm font-medium gap-1 px-2 py-1">
+            {Icon && <Icon />} <span>{skill}</span>
           </li>
         );
       })

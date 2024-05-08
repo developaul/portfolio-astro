@@ -31,10 +31,10 @@ const SKILLS_ICONS: Record<string, any> = {
 const lang = getLangFromUrl(Astro.url);
 const info = useGetInfo(lang);
 
-const { skills } = info;
+const { skills, alts } = info;
 ---
 
-<Section title="Habilidades">
+<Section title={alts.SkillTitle}>
   <ul class="inline-flex gap-2 flex-wrap">
     {
       skills.map(({ name }) => {

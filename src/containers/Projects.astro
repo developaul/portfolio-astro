@@ -7,10 +7,10 @@ import GitHub from "@icons/GitHub.astro";
 const lang = getLangFromUrl(Astro.url);
 const info = useGetInfo(lang);
 
-const { projects } = info;
+const { projects, alts } = info;
 ---
 
-<Section title="Proyectos">
+<Section title={alts.ProjectsTitle}>
   <ul class="grid gap-4">
     {
       projects.map(

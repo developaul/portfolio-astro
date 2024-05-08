@@ -243,5 +243,12 @@
         "UI"
       ]
     }
-  ]
+  ],
+  "alts": {
+    "workTitle": "Experiencia laboral más reciente",
+    "defaultEndDate": "Actual",
+    "educationTitle": "Educación",
+    "ProjectsTitle": "Proyectos",
+    "SkillTitle": "Habilidades"
+  }
 }

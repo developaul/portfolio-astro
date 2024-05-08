@@ -5,16 +5,18 @@ import { getLangFromUrl, useGetInfo } from "@i18n/utils";
 const lang = getLangFromUrl(Astro.url);
 const info = useGetInfo(lang);
 
-const { work, workTitle, defaultEndDate } = info;
+const { work, alts } = info;
 ---
 
-<Section title={workTitle}>
+<Section title={alts.workTitle}>
   <ul class="flex flex-col gap-8">
     {
       work.map(({ name, startDate, endDate, position, summary, url }) => {
         const startYear = new Date(startDate).getFullYear();
         const endYear =
-          endDate != null ? new Date(endDate).getFullYear() : defaultEndDate;
+          endDate != null
+            ? new Date(endDate).getFullYear()
+            : alts.defaultEndDate;
 
         return (
           <li>

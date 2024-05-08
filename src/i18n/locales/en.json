@@ -80,8 +80,6 @@
       ]
     }
   ],
-  "workTitle": "Most recent work experience",
-  "defaultEndDate": "Currently",
   "education": [
     {
       "institution": "ICPNA",
@@ -199,5 +197,12 @@
       "level": "Avanzado",
       "keywords": []
     }
-  ]
+  ],
+  "alts": {
+    "workTitle": "Most recent work experience",
+    "educationTitle": "Education",
+    "defaultEndDate": "Currently",
+    "ProjectsTitle": "Projects",
+    "SkillTitle": "Habilidades"
+  }
 }

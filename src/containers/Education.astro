@@ -6,16 +6,18 @@ import { getLangFromUrl, useGetInfo } from "@i18n/utils";
 const lang = getLangFromUrl(Astro.url);
 const info = useGetInfo(lang);
 
-const { education, defaultEndDate } = info;
+const { education, alts } = info;
 ---
 
-<Section title="Educación">
+<Section title={alts.educationTitle}>
   <ul class="flex flex-col gap-8">
     {
       education.map(({ institution, startDate, endDate, area }) => {
         const startYear = new Date(startDate).getFullYear();
         const endYear =
-          endDate != null ? new Date(endDate).getFullYear() : defaultEndDate;
+          endDate != null
+            ? new Date(endDate).getFullYear()
+            : alts.defaultEndDate;
         const years = `${startYear} - ${endYear}`;
 
         return (

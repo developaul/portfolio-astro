@@ -6,9 +6,16 @@ import Experience from "@containers/Experience.astro";
 import Education from "@containers/Education.astro";
 import Projects from "@containers/Projects.astro";
 import Skills from "@containers/Skills.astro";
+
+import { getLangFromUrl, useGetInfo } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const info = useGetInfo(lang);
+
+const { name, label } = info.basics;
 ---
 
-<Layout title="Portafolio de developaul">
+<Layout title={`Portafolio de ${name} - ${label}`}>
   <main>
     <Hero />
     <About />

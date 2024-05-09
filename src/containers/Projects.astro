@@ -21,7 +21,7 @@ const { projects, alts } = info;
                 <header class="flex-1">
                   <h3 class="flex items-center gap-2 mb-1 ">
                     <a
-                      class="text-black font-bold text-lg hover:underline"
+                      class="text-black dark:text-white font-bold text-lg hover:underline"
                       href={url}
                       target="_blank"
                       title={`Ver el proyecto ${name}`}
@@ -31,7 +31,7 @@ const { projects, alts } = info;
                     {isActive && <span>•</span>}
                     {github && (
                       <a
-                        class="text-black hover:underline"
+                        class="text-black dark:text-white hover:underline"
                         href={github}
                         target="_blank"
                         title={`Ver código fuente del proyecto ${name}`}
@@ -40,12 +40,14 @@ const { projects, alts } = info;
                       </a>
                     )}
                   </h3>
-                  <p class="text-sm mb-1 leading-5">{description}</p>
+                  <p class="text-gray-600 dark:text-gray-300 text-sm mb-1 leading-5">
+                    {description}
+                  </p>
                 </header>
                 <footer class="flex flex-wrap gap-1 text-xs">
                   {highlights.map((highlight) => {
                     return (
-                      <span class="inline-block rounded-md bg-gray-100 text-gray-700 text-xs font-medium px-2 py-1">
+                      <span class="inline-block rounded-md bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-xs font-medium px-2 py-1">
                         {highlight}
                       </span>
                     );

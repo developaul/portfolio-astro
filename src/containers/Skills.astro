@@ -67,7 +67,7 @@ const { skills, alts } = info;
         const Icon = SKILLS_ICONS[skill];
 
         return (
-          <li class="flex items-center bg-gray-100 rounded-lg text-black text-sm font-medium gap-1 px-2 py-1">
+          <li class="flex items-center bg-gray-100 dark:bg-gray-800 rounded-lg text-black dark:text-white text-sm font-medium gap-1 px-2 py-1">
             {Icon && <Icon />} <span>{skill}</span>
           </li>
         );

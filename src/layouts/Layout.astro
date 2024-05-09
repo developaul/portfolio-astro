@@ -38,7 +38,7 @@ const { image, summary, url } = info.basics;
 		<meta name="twitter:description" content={summary} />
 		<meta name="twitter:image" content={image} />
 	</head>
-	<body>
+	<body class="bg-white dark:bg-gray-950 dark:text-white">
 		<Header />
 		<slot />
 		<!-- <Footer /> -->
@@ -65,7 +65,6 @@ const { image, summary, url } = info.basics;
 			"Courier New",
 			Courier,
 			monospace;
-		background: #fff;
 		letter-spacing: -0.025rem;
 	}
 
@@ -108,14 +107,6 @@ const { image, summary, url } = info.basics;
 			"Open Sans",
 			"Helvetica Neue",
 			sans-serif;
-	}
-
-	p {
-		color: #666;
-		font-size: 0.9rem;
-		line-height: 1.5;
-		margin: 0;
-		text-wrap: pretty;
 	}
 
 	.print {

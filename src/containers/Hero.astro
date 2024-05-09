@@ -44,7 +44,7 @@ const { city, region } = location;
         {
           email && (
             <a
-              class="text-gray-500 inline-flex items-center justify-center border border-gray-200 p-1 w-8 h-8 rounded-md transition-all duration-300 ease-linear hover:bg-gray-100 hover:border-gray-300"
+              class="text-gray-500 dark:text-gray-200 inline-flex items-center justify-center border border-gray-200 p-1 w-8 h-8 rounded-md transition-all duration-300 ease-linear hover:bg-gray-100 dark:hover:bg-gray-800 hover:border-gray-300"
               href={`mailto:${email}`}
               title={`Enviar un correo electrónico a ${name} al correo ${email}`}
               target="_blank"
@@ -57,7 +57,7 @@ const { city, region } = location;
         {
           phone && (
             <a
-              class="text-gray-500 inline-flex items-center justify-center border border-gray-200 p-1 w-8 h-8 rounded-md transition-all duration-300 ease-linear hover:bg-gray-100 hover:border-gray-300"
+              class="text-gray-500 dark:text-gray-200 inline-flex items-center justify-center border border-gray-200 p-1 w-8 h-8 rounded-md transition-all duration-300 ease-linear hover:bg-gray-100 dark:hover:bg-gray-800 hover:border-gray-300"
               href={`tel:${phone}`}
               title={`Llamar por teléfono a ${name} al número ${phone}`}
               target="_blank"
@@ -70,7 +70,7 @@ const { city, region } = location;
         {
           whatsApp && (
             <a
-              class="text-gray-500 inline-flex items-center justify-center border border-gray-200 p-1 w-8 h-8 rounded-md transition-all duration-300 ease-linear hover:bg-gray-100 hover:border-gray-300"
+              class="text-gray-500 dark:text-gray-200 inline-flex items-center justify-center border border-gray-200 p-1 w-8 h-8 rounded-md transition-all duration-300 ease-linear hover:bg-gray-100 dark:hover:bg-gray-800 hover:border-gray-300"
               href={`https://wa.me/${whatsApp}?text=Hola, me interesa tu perfil`}
               title={`Enviar mensaje a ${name} al número ${phone}`}
               target="_blank"
@@ -86,7 +86,7 @@ const { city, region } = location;
 
             return (
               <a
-                class="text-gray-500 inline-flex items-center justify-center border border-gray-200 p-1 w-8 h-8 rounded-md transition-all duration-300 ease-linear hover:bg-gray-100 hover:border-gray-300"
+                class="text-gray-500 dark:text-gray-200 inline-flex items-center justify-center border border-gray-200 p-1 w-8 h-8 rounded-md transition-all duration-300 ease-linear hover:bg-gray-100 dark:hover:bg-gray-800 hover:border-gray-300"
                 href={url}
                 title={`Visitar el perfil de ${username} en ${network}`}
                 target="_blank"

@@ -8,8 +8,9 @@ const currentLang = getLangFromUrl(Astro.url);
 <form>
   <select
     id="languagePicker"
-    class="bg-gray-50 dark:bg-gray-900 border border-gray-300 text-gray-900 dark:text-white text-sm rounded-lg border-s-gray-100 block p-2.5 outline-none"
+    class="bg-gray-50 dark:bg-zinc-800 border border-gray-300 text-zinc-800 dark:text-white text-sm rounded-lg border-s-gray-100 block p-2.5 outline-none"
   >
+    <label for="languagePicker">Selecciona un idioma:</label>
     {
       Object.entries(languages).map(([lang, label]) => (
         <option selected={lang === currentLang} value={lang}>

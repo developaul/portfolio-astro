@@ -47,21 +47,24 @@
       "startDate": "2021-04-19",
       "endDate": "2024-04-30",
       "summary": [
-        "Mejoré la interacción de los clientes con el sistema de entregas al permitirles calificar y comentar sobre los candidatos. Reduje el tiempo de respuesta de los clientes con los reclutadores, pasando de semanas a solo horas, mediante la implementación de APIs y un servicio de notificaciones programadas utilizando colas con Bull, Redis y SES para garantizar la sincronización de todos los implicados.",
-        "Implementé geolocalización basada en la IP del usuario para obtener su ubicación automáticamente, simplificando y acelerando el proceso de postulación para el candidato al obtener su ubicación de forma automática.",
-        "Implementé integraciones con módulos de FFMPEG controlados por workers de Node.js en los servicios de procesamiento de video, lo que resultó en mejoras significativas en la reducción del peso de los vídeos hasta un 90% y garantizando la compatibilidad con varios navegadores mediante el soporte de diversos codecs y formatos de vídeo.",
-        "Incrementé la cantidad de postulaciones por semana en un 250% mediante la implementación de webhooks y formularios de Facebook y Google Ads utilizando Node.js, SES y MongoDB.",
-        "Mejoré la eficiencia del equipo de reclutadores al centralizar la comunicación y los estados de los procesos que estaban llevando, proporcionando una plataforma más organizada y eficaz para la colaboración interna.",
-        "Implementé la importación y exportación de datos de ofertas y candidatos en el ATS al desarrollar un proceso de scraping para múltiples bolsas de trabajo utilizando Puppeteer. Este enfoque resultó en un importante aumento de la monetización para la empresa.",
-        "Mejoré la experiencia de usuario al liderar la actualización del landing page principal de la empresa utilizando Astro, GSAP, TypeScript y Mixpanel para rastrear las métricas de la página.",
+        "Mejoré la interacción de los clientes con el sistema de entregas al permitirles calificar y comentar sobre los candidatos. Reduje el tiempo de respuesta de los clientes con los reclutadores, pasando de días a solo horas, mediante la implementación de APIs y un servicio de notificaciones programadas utilizando colas con NodeJs, Bull, Redis y AWS SES para garantizar la sincronización de todos los implicados.",
+        "Diseñé y desarrollé un servicio de geolocalización basado en la IP del usuario, simplificando el proceso de postulación al obtener automáticamente su ubicación.",
+        "Implementé integraciones con módulos de FFMPEG controlados por workers de NodeJs en los servicios de procesamiento de video, lo que resultó en mejoras significativas en la reducción del peso de los vídeos hasta un 90% y garantizando la compatibilidad con varios navegadores mediante el soporte de diversos codecs y formatos de vídeo.",
+        "Incrementé la cantidad de postulaciones por semana en un 250% mediante la implementación de webhooks y formularios de Facebook y Google Ads utilizando NodeJs, SES y MongoDB.",
+        "Mejoré la eficiencia del equipo de reclutadores al centralizar la comunicación y los estados de los procesos que estaban llevando, proporcionando una plataforma más organizada y eficaz para la colaboración interna utilizando React, Material-UI, NodeJs, Graphql, MongoDB, AWS SES.",
+        "Implementé la importación y exportación de datos de ofertas y candidatos en el ATS al desarrollar un proceso de scraping para múltiples bolsas de trabajo utilizando Puppeteer y Cheerio. Este enfoque resultó en un importante aumento de la monetización para la empresa.",
+        "Mejoré la experiencia de usuario al liderar la actualización del landing page principal de la empresa utilizando Astro, Tailwind CSS,  GSAP, TypeScript y Mixpanel para rastrear las métricas de la página.",
         "Optimicé el análisis empresarial de nuestros productos digitales al implementar eventos utilizando Mixpanel y Lucky Orange, lo que proporcionó información valiosa para la toma de decisiones estratégicas.",
-        "Desarrollé servicios backend en Node.js aplicando tecnologías como GraphQL y microservicios, lo que llevó a una reducción del 70% en la carga de procesamiento y un aumento del 90% en la satisfacción del usuario gracias a consultas y respuestas más rápidas. Estas mejoras fueron posibles mediante la implementación de DataLoaders y el desacoplamiento de Backing Services.",
-        "Desarrollé tecnologías para monitorear campañas de Email Marketing y Email Transaccional utilizando tecnologías como S3, SES de AWS y Restify con Node.js en el lado del servidor. Esto resultó en un aumento del 2000% en el volumen de envío de correos electrónicos y una mejora del 200% en las tasas de apertura.",
-        "mplementé módulos de tareas del ATS para integrar herramientas internas como Formularios, Gestión de Documentos y Gestión de CVs. Utilicé tecnologías de gestión de colas (Better Queue) y notificaciones (SES) en AWS para garantizar un proceso eficiente y sincronizado.",
+        "Desarrollé servicios backend en NodeJS aplicando tecnologías como GraphQL y microservicios, lo que llevó a una reducción del 70% en la carga de procesamiento y un aumento del 90% en la satisfacción del usuario gracias a consultas y respuestas más rápidas. Estas mejoras fueron posibles mediante la implementación de DataLoaders y el desacoplamiento de Backing Services.",
+        "Desarrollé tecnologías para monitorear campañas de Email Marketing y Email Transaccional utilizando tecnologías como S3, SES, SNS de AWS y Restify con Node.js en el lado del servidor. Esto resultó en un aumento del 2000% en el volumen de envío de correos electrónicos y una mejora del 200% en las tasas de apertura.",
+        "Mejoré la eficiencia en el procesamiento de eventos mediante la implementación de AWS EventBridge con funciones de AWS Lambda, aprovechando al máximo las capacidades de arquitecturas sin servidor. Utilicé el AWS CDK para definir y desplegar la infraestructura de forma eficiente, lo que permitió una gestión más ágil y escalable de los recursos en la nube.",
+        "Implementé módulos de tareas del ATS para integrar herramientas internas como Formularios, Gestión de Documentos y Gestión de CVs. Utilicé tecnologías de gestión de colas (Better Queue) y notificaciones (SES) en AWS para garantizar un proceso eficiente y sincronizado.",
         "Mejoré la calidad del código al realizar revisión de código, lo que resultó en una disminución en errores de producción y una mejora en la calidad del código a través de la evaluación de complejidad, acoplamiento, cohesión, mantenibilidad y rendimiento de recursos.",
-        "Participé como profesor en la creación de un programa educacional llamado Krowdy Academy para entrenar desarrolladores juniors en tecnologías backend, frontend y reliability"
+        "Participé como profesor en la creación de un programa educacional llamado Krowdy Academy para entrenar desarrolladores juniors en tecnologías backend, frontend y reliability."
       ],
-      "highlights": []
+      "highlights": [
+        "Remoto"
+      ]
     },
     {
       "name": "CIK",
@@ -73,7 +76,9 @@
         "Lideré el desarrollo de una aplicación de escritorio multiplataforma para etiquetado automático de fotos, utilizando Bootstrap, JavaScript, ReactJs, NodeJs y ElectronJs.",
         "Logré eliminar el etiquetado manual, automatizando el proceso al 100% integrando tecnologías para garantizar compatibilidad y adaptando la aplicación a las necesidades del usuario."
       ],
-      "highlights": []
+      "highlights": [
+        "Remoto"
+      ]
     }
   ],
   "workTitle": "Experiencia laboral más reciente",

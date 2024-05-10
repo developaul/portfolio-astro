@@ -60,9 +60,10 @@ const { work, alts } = info;
               <footer>
                 <ul class="flex flex-col list-inside list-disc gap-2">
                   {summary.map((item) => (
-                    <li class="text-sm m-0 text-pretty text-gray-600 dark:text-gray-300">
-                      {item}
-                    </li>
+                    <li
+                      class="text-sm m-0 text-pretty text-gray-600 dark:text-gray-300"
+                      set:html={item}
+                    />
                   ))}
                 </ul>
               </footer>

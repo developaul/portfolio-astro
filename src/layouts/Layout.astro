@@ -1,5 +1,4 @@
 ---
-import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
 import { getLangFromUrl, useGetInfo } from "@i18n/utils";
 
@@ -41,22 +40,9 @@ const { image, summary, url } = info.basics;
 	<body class="bg-white dark:bg-gray-950 dark:text-white">
 		<Header />
 		<slot />
-		<!-- <Footer /> -->
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-
 	html {
 		font-family:
 			Menlo,
@@ -66,28 +52,6 @@ const { image, summary, url } = info.basics;
 			Courier,
 			monospace;
 		letter-spacing: -0.025rem;
-	}
-
-	body,
-	figure {
-		margin: 0;
-		padding: 0;
-	}
-
-	a {
-		text-decoration: none;
-	}
-
-	ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
-
-	*,
-	*::before,
-	*::after {
-		box-sizing: border-box;
 	}
 
 	h1,
@@ -107,27 +71,5 @@ const { image, summary, url } = info.basics;
 			"Open Sans",
 			"Helvetica Neue",
 			sans-serif;
-	}
-
-	.print {
-		display: none !important;
-	}
-
-	@media print {
-		.no-print {
-			display: none !important;
-		}
-
-		.print {
-			display: block !important;
-		}
-
-		astro-dev-toolbar {
-			display: none !important;
-		}
-
-		article {
-			break-inside: avoid;
-		}
 	}
 </style>

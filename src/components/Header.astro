@@ -4,11 +4,17 @@ import ThemePicker from "./ThemePicker.astro";
 ---
 
 <header
-	class="max-w-3xl mx-auto mb-3 py-4 sticky top-0 backdrop-blur-lg flex justify-end px-8 bg-white dark:bg-zinc-800 bg-opacity-90"
+	class="max-w-3xl mx-auto mb-3 py-4 sticky top-0 backdrop-blur-lg flex justify-between items-center px-8 bg-white dark:bg-zinc-800 bg-opacity-90"
 >
-	<div>
-		<!-- TODO: ADD LOGO -->
-	</div>
+	<a href="/">
+		<picture class="hidden dark:block">
+			<img alt="Dark logo" src="/light-logo.svg" />
+		</picture>
+
+		<picture class="dark:hidden">
+			<img alt="Light logo" src="/dark-logo.svg" />
+		</picture>
+	</a>
 	<div class="flex items-center gap-4">
 		<ThemePicker />
 		<LanguagePicker />

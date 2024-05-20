@@ -109,6 +109,17 @@
   ],
   "projects": [
     {
+      "name": "Transcribe App",
+      "isActive": true,
+      "description": "Convert audio to text effortlessly. Light/dark mode, English transcriptions, cross-platform, and secure transcription management with integrated authentication.",
+      "highlights": [
+        "Light/dark mode",
+        "Cross-platform"
+      ],
+      "url": "https://transcribe-app-next.vercel.app/",
+      "github": "https://github.com/developaul/transcribe-app"
+    },
+    {
       "name": "Stylus Shop",
       "isActive": true,
       "description": "The online clothing store offers authentication and payments through PayPal, along with features such as saving favorites, a section to add new stock, and another to track sales made and in progress.",

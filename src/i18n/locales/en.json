@@ -62,9 +62,7 @@
         "Improved code quality by conducting code reviews, resulting in a decrease in production errors and an improvement in code quality through evaluation of complexity, coupling, cohesion, maintainability, and resource performance.",
         "Participated as a teacher in the creation of an educational program called Krowdy Academy to train junior developers in backend, frontend, and reliability technologies."
       ],
-      "highlights": [
-        "Remote"
-      ]
+      "highlights": ["Remote"]
     },
     {
       "name": "CIK",
@@ -76,9 +74,7 @@
         "Led the development of a cross-platform desktop application for automatic photo tagging, using Bootstrap, JavaScript, ReactJs, NodeJs, and ElectronJs.",
         "Achieved 100% manual tagging elimination by automating the process, integrating technologies to ensure compatibility, and tailoring the application to user needs."
       ],
-      "highlights": [
-        "Remote"
-      ]
+      "highlights": ["Remote"]
     }
   ],
   "education": [
@@ -90,9 +86,7 @@
       "startDate": "2022-02-01",
       "endDate": null,
       "score": "",
-      "courses": [
-        ""
-      ]
+      "courses": [""]
     },
     {
       "institution": "SENATI",
@@ -102,20 +96,29 @@
       "startDate": "2019-02-01",
       "endDate": "2020-02-01",
       "score": "",
-      "courses": [
-        ""
-      ]
+      "courses": [""]
     }
   ],
   "projects": [
     {
+      "name": "Translate App",
+      "isActive": true,
+      "description": "Translate instantly into multiple languages with quick real-time responses accessible on any device! Additionally, it supports translation of images and documents.",
+      "highlights": [
+        "Light/Dark mode",
+        "Cross-platform",
+        "Text translation",
+        "Image translation",
+        "Document translation"
+      ],
+      "url": "https://talk-translate.vercel.app/",
+      "github": "https://github.com/developaul/translate-app"
+    },
+    {
       "name": "Transcribe App",
       "isActive": true,
       "description": "Convert audio to text effortlessly. Light/dark mode, English transcriptions, cross-platform, and secure transcription management with integrated authentication.",
-      "highlights": [
-        "Light/dark mode",
-        "Cross-platform"
-      ],
+      "highlights": ["Light/dark mode", "Cross-platform"],
       "url": "https://transcribe-app-next.vercel.app/",
       "github": "https://github.com/developaul/transcribe-app"
     },
@@ -123,10 +126,7 @@
       "name": "Stylus Shop",
       "isActive": true,
       "description": "The online clothing store offers authentication and payments through PayPal, along with features such as saving favorites, a section to add new stock, and another to track sales made and in progress.",
-      "highlights": [
-        "Sell your own clothes",
-        "Online payments"
-      ],
+      "highlights": ["Sell your own clothes", "Online payments"],
       "url": "https://stylus-shop.vercel.app/",
       "github": "https://github.com/developaul/stylus-shop"
     },
@@ -134,10 +134,7 @@
       "name": "Task Manager",
       "isActive": true,
       "description": "Task Manager is an application for organizing tasks into the following categories: To do, In Progress, Done, to maintain a certain level of organization when performing tasks.",
-      "highlights": [
-        "Trello clone",
-        "Optimize your task management"
-      ],
+      "highlights": ["Trello clone", "Optimize your task management"],
       "url": "https://task-manager-cd8af.web.app/",
       "github": "https://github.com/developaul/task-manager-react"
     },
@@ -145,10 +142,7 @@
       "name": "Movie App",
       "isActive": true,
       "description": "Web application for movies, where you can watch trailers from the latest releases to classics.",
-      "highlights": [
-        "Watch latest trailers",
-        "Movies"
-      ],
+      "highlights": ["Watch latest trailers", "Movies"],
       "url": "https://keen-wilson-cf2ebe.netlify.app/",
       "github": "https://github.com/developaul/movie-react"
     }

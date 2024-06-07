@@ -62,9 +62,7 @@
         "Mejoré la calidad del código al realizar revisión de código, lo que resultó en una disminución en errores de producción y una mejora en la calidad del código a través de la evaluación de complejidad, acoplamiento, cohesión, mantenibilidad y rendimiento de recursos.",
         "Participé como profesor en la creación de un programa educacional llamado Krowdy Academy para entrenar desarrolladores juniors en tecnologías backend, frontend y reliability."
       ],
-      "highlights": [
-        "Remoto"
-      ]
+      "highlights": ["Remoto"]
     },
     {
       "name": "CIK",
@@ -76,9 +74,7 @@
         "Lideré el desarrollo de una aplicación de escritorio multiplataforma para etiquetado automático de fotos, utilizando Bootstrap, JavaScript, ReactJs, NodeJs y ElectronJs.",
         "Logré eliminar el etiquetado manual, automatizando el proceso al 100% integrando tecnologías para garantizar compatibilidad y adaptando la aplicación a las necesidades del usuario."
       ],
-      "highlights": [
-        "Remoto"
-      ]
+      "highlights": ["Remoto"]
     }
   ],
   "workTitle": "Experiencia laboral más reciente",
@@ -107,13 +103,24 @@
   ],
   "projects": [
     {
+      "name": "Translate App",
+      "isActive": true,
+      "description": "¡Traduce al instante en varios idiomas con respuestas rápidas en tiempo real y accesible en cualquier dispositivo! Además, soporta traducciones de imágenes y documentos.",
+      "highlights": [
+        "Modo claro/oscuro",
+        "Multiplataforma",
+        "Traducción de texto",
+        "Traducción de imágenes",
+        "Traducción de documentos"
+      ],
+      "url": "https://talk-translate.vercel.app/",
+      "github": "https://github.com/developaul/translate-app"
+    },
+    {
       "name": "Transcribe App",
       "isActive": true,
       "description": "Convierte audios a texto fácilmente. Modo claro/oscuro, transcripciones en inglés, multiplataforma y gestión segura de transcripciones con autenticación integrada.",
-      "highlights": [
-        "Modo claro/oscuro",
-        "Multiplataforma"
-      ],
+      "highlights": ["Modo claro/oscuro", "Multiplataforma"],
       "url": "https://transcribe-app-next.vercel.app/",
       "github": "https://github.com/developaul/transcribe-app"
     },
@@ -121,10 +128,7 @@
       "name": "Stylus Shop",
       "isActive": true,
       "description": "La tienda en línea de ropa ofrece autenticación y pagos a través de PayPal, además de características como guardar favoritos, una sección para añadir nuevo stock y otra para rastrear las ventas realizadas y en proceso.",
-      "highlights": [
-        "Vende tu propia ropa",
-        "Pagos online"
-      ],
+      "highlights": ["Vende tu propia ropa", "Pagos online"],
       "url": "https://stylus-shop.vercel.app/",
       "github": "https://github.com/developaul/stylus-shop"
     },
@@ -132,10 +136,7 @@
       "name": "Task Manager",
       "isActive": true,
       "description": "Task Manager es una aplicación para organizar tareas en las siguientes categorias To do, In Progress, Done para mantener cierta organización a la hora de realizar tareas.",
-      "highlights": [
-        "Clon de trello",
-        "Optimiza tu gestión de tareas"
-      ],
+      "highlights": ["Clon de trello", "Optimiza tu gestión de tareas"],
       "url": "https://task-manager-cd8af.web.app/",
       "github": "https://github.com/developaul/task-manager-react"
     },
@@ -143,10 +144,7 @@
       "name": "Movie App",
       "isActive": true,
       "description": "Aplicación Web de películas, donde podras visualizar trailers desde las últimas peliculas hasta las clasicas.",
-      "highlights": [
-        "Mirar últimos tráilers",
-        "Películas"
-      ],
+      "highlights": ["Mirar últimos tráilers", "Películas"],
       "url": "https://keen-wilson-cf2ebe.netlify.app/",
       "github": "https://github.com/developaul/movie-react"
     }

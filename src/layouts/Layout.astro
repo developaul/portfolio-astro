@@ -1,4 +1,6 @@
 ---
+import SpeedInsights from '@vercel/speed-insights/astro';
+
 import Header from "@components/Header.astro";
 import { getLangFromUrl, useGetInfo } from "@i18n/utils";
 
@@ -37,6 +39,8 @@ const { image, summary, url } = info.basics;
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={summary} />
 		<meta name="twitter:image" content={image} />
+
+		<SpeedInsights />
 	</head>
 	<body class="bg-white dark:bg-zinc-800 dark:text-white">
 		<Header />
